@@ -10,14 +10,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-class Prueba {
+public class Prueba {
 
 	 protected WebDriver driver;
 
 	  @BeforeAll
 	  public static void setupClass() {
-		  WebDriverManager.chromedriver().clearCache();
-		  WebDriverManager.chromedriver().driverVersion("83.0.4103.97").setup();
+		  WebDriverManager.chromedriver().setup();
 		  WebApp.start();
 	  }
 
